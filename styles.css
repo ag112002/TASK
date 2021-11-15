@@ -1,0 +1,117 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #75addb;
+  display:flex;
+}
+.regulator{
+  width: 250px;
+  height:250px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  border:5px solid #413563;
+  box-shadow: 2px 2px 8px 2px rgba(46, 61, 82,0.92);
+  background-size: cover;
+  position:absolute;
+  left: 20%;
+  top:10%;
+
+}
+.regulator::before{
+  content:'';
+  width: 12px;
+  height:12px;
+  border-radius: 50%;
+  border:3px solid rgb(72,73,117);
+  background-color:#f54d93;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 35;
+}
+
+ svg{
+   position: absolute;
+   z-index: 24;
+   border-radius: 50%;
+   left:20.5%;
+   top:10%;
+ }
+ text{
+   font-size: 20px;
+   font-family: 'Barlow', sans-serif;
+   fill:rgb(130,157,206);
+ }
+ .hand{
+   position: absolute;
+   bottom: 50%;
+   left: 50%;
+   transform: translate(-50%) rotate(206deg);
+   transform-origin: bottom;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   position: absolute;
+   z-index: 30;
+ }
+ .needle{
+   width: 6px;
+   height: 36%;
+   left:48.5%;
+   background-color: rgb(72,73,117);
+ }
+input{
+  position:absolute;
+  top:55%;
+  left:23%;
+  height: 30px;
+  border: 2px solid blue;
+
+}
+.boxButton{
+  position:absolute;
+  top:55%;
+  left:35.9%;
+  height: 36px;
+  border: 2px solid blue;
+}
+.boxButton:hover{
+  background-color:lightblue;
+}
+.watch{
+  background: #f0f0f0;
+  border:3.5px solid #413563;
+  box-shadow: 1.5px 1.5px 6px 1.5px rgba(46, 61, 82,0.92);
+  background-size: cover;
+  position: absolute;
+  top: 13%;
+  left:58%;
+  border-radius: 10%;
+}
+#reset{
+  background-color:#75addb;
+  color: white;
+  border:1px solid lightblue;
+  height: 35px;
+  border-radius: 20%;
+
+}
+#start{
+  background-color: green;
+  color: white;
+  border:1px solid lightblue;
+  height: 35px;
+  border-radius: 20%;
+}
+#stop{
+  background-color:red;
+  color: white;
+  border:1px solid lightblue;
+  height: 35px;
+  border-radius: 20%;
+}
+h1{
+  color:#99A799;
+  font-size: 47px;
+}

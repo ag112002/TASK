@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energy Regulator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="regulator">
+      <div class="hand needle"></div>
+    </div>
+    <svg width="250" height="250">
+      <text x="162.5" y="40">60</text>
+      <text x="202.5" y="80">70</text>
+      <text x="217.5" y="135">80</text>
+      <text x="200" y="190">90</text>
+      <text x="155.5" y="230">100</text>
+      <text x="117.5" y="245">|</text>
+      <text x="65" y="230">0</text>
+      <text x="22.5" y="190">10</text>
+      <text x="7.5" y="135">20</text>
+      <text x="22.5" y="80">30</text>
+      <text x="60" y="40">40</text>
+      <text x="110" y="25">50</text>
+    </svg>
+    <input class="box" type="text" name="" value="">
+    <button class="boxButton" onclick="start()" >Ok</button>
+<div class="watch">
+    <table cellpadding=12>
+      <tr>
+        <td><h1 id="hr">00</h1></td>
+        <td><h1 id="min">00</h1></td>
+        <td><h1 id="sec">00</h1></td>
+      </tr>
+      <tr>
+        <td><button onclick="reset()" id="reset">Reset</button></td>
+        <td></td>
+        <td><button onclick="stop()" id="stop">Stop</button></td>
+      </tr>
+    </table>
+</div>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
